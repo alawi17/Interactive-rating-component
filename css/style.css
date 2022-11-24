@@ -64,6 +64,7 @@ p {
 
 .card__content_start h1.card__title {
   margin-bottom: 1rem;
+  font-weight: var(--font-bold);
 }
 
 .card__content_start p.card__text {

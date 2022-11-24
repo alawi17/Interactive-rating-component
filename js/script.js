@@ -3,7 +3,6 @@ const card_content_end = document.querySelector(".card__content_end");
 const formRating = document.querySelector(".form-rating");
 const ratings = document.getElementsByName("rating");
 const ratingResult = document.getElementById("result_rate");
-const btnSubmit = document.getElementById("btn-submit");
 
 formRating.addEventListener("submit", (e) => {
   e.preventDefault();
