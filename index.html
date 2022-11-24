@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="container">
+      <div class="card">
+        <div class="card__content_start">
+          <div class="star">
+            <img src="./images/icon-star.svg" alt="icon-star" />
+          </div>
+          <h1 class="card__title">How did we do?</h1>
+          <p class="card__text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form action="" class="form-rating" id="form-rating">
+            <div class="form__input">
+              <input type="radio" name="rating" id="btn-1" value="1" />
+              <label class="number" for="btn-1">1</label>
+              <input type="radio" name="rating" id="btn-2" value="2" />
+              <label class="number" for="btn-2">2</label>
+              <input type="radio" name="rating" id="btn-3" value="3" />
+              <label class="number" for="btn-3">3</label>
+              <input type="radio" name="rating" id="btn-4" value="4" />
+              <label class="number" for="btn-4">4</label>
+              <input type="radio" name="rating" id="btn-5" value="5" />
+              <label class="number" for="btn-5">5</label>
+            </div>
+            <div class="form__submit">
+              <button class="btn-submit" id="btn-submit" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+        <div class="card__content_end hidden">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="illustration-thank-you"
+          />
+          <p class="result">
+            You selected
+            <!-- Add rating here -->
+            <span class="result_rate" id="result_rate"></span>
+            out of 5
+          </p>
+          <h2 class="card__title">Thank you!</h2>
+          <p class="card__text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- Thank you state end -->
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Alawi</a>.
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
